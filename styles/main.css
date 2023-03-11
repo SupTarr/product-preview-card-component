@@ -48,7 +48,7 @@ body article.card section.card-right {
 }
 body article.card section.card-right .card-right-header > p {
   font-family: "Montserrat", sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   color: hsl(228, 12%, 48%);
   letter-spacing: 5px;
 }
@@ -80,6 +80,8 @@ body article.card section.card-right .price .price-sell {
 body article.card section.card-right .price .price-original {
   text-decoration: line-through;
   color: hsl(228, 12%, 48%);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
 body article.card section.card-right button.button {
   margin-top: 20px;
@@ -100,4 +102,6 @@ body article.card section.card-right button.button:hover {
 }
 body article.card section.card-right button.button .button-name {
   margin-left: 10px;
+  font-size: 1.15rem;
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */
