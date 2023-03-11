@@ -1,0 +1,19 @@
+@media screen and (max-width: 375px) {
+  section.card-left {
+    background-image: url("./images/image-product-mobile.jpg");
+    background-size: contain;
+  }
+
+  article.card {
+    flex-wrap: wrap;
+  }
+
+  .card-left {
+    min-width: 200px;
+    height: auto;
+  }
+
+  .card-right {
+    min-width: 300px;
+  }
+}

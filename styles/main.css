@@ -1,25 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Fugaz+One&family=Montserrat:wght@100&family=Nunito:wght@200&display=swap");
 @import url("https://unpkg.com/css.gg@2.0.0/icons/css/shopping-cart.css");
-
-:root {
-  /* COLOR */
-  --BODY-BG-COLOR: hsl(30, 38%, 92%);
-  --CONTENT-BG-COLOR: hsl(0, 0%, 100%);
-  --BUTTON-BG-COLOR: hsl(158, 36%, 37%);
-  --BUTTON-BG-COLORFADE: hsla(158, 36%, 37%, 0.42);
-
-  --F-HEAD-COLOR: hsl(228, 12%, 48%);
-  --F-H2-COLOR: hsl(212, 21%, 14%);
-  --F-PRICESELL: hsl(158, 36%, 37%);
-
-  /* BORDER */
-  --BORDER-RADIUS: 5px;
-
-  /* FONT-FAMILY */
-  --FF-HEADER: "Montserrat", sans-serif;
-  --FF-H2: "Fraunces", serif;
+@media screen and (max-width: 375px) {
+  section.card-left {
+    background-image: url("./images/image-product-mobile.jpg");
+    background-size: contain;
+  }
+  article.card {
+    flex-wrap: wrap;
+  }
+  .card-left {
+    min-width: 200px;
+    height: auto;
+  }
+  .card-right {
+    min-width: 300px;
+  }
 }
-
+/* COLOR */
+/* BORDER */
+/* FONT-FAMILY */
 * {
   margin: 0;
   padding: 0;
@@ -41,7 +40,7 @@ article.card {
   display: flex;
   border-radius: 10px;
   justify-content: center;
-  margin: 0px 5px;
+  margin: 0px 10px;
 }
 
 .card-left {
@@ -108,7 +107,6 @@ article.card {
   color: white;
   border: none;
   border-radius: 10px;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,24 +118,4 @@ article.card {
 
 .button-name {
   margin-left: 10px;
-}
-
-@media screen and (max-width: 375px) {
-  section.card-left {
-    background-image: url("./images/image-product-mobile.jpg");
-    background-size: contain;
-  }
-
-  article.card {
-    flex-wrap: wrap;
-  }
-
-  .card-left {
-    min-width: 200px;
-    height: auto;
-  }
-
-  .card-right {
-    min-width: 300px;
-  }
-}
+}/*# sourceMappingURL=main.css.map */
