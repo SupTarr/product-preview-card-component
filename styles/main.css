@@ -46,12 +46,14 @@ body article.card section.card-right {
   flex-direction: column;
   justify-content: center;
 }
-body article.card section.card-right .card-right-header {
+body article.card section.card-right .card-right-header > p {
   font-family: "Montserrat", sans-serif;
+  font-weight: 600;
   color: hsl(228, 12%, 48%);
   letter-spacing: 5px;
 }
-body article.card section.card-right .card-right-h2 {
+body article.card section.card-right .card-right-header .card-right-h1 {
+  font-size: 2rem;
   margin-top: 20px;
   font-family: "Fraunces", serif;
   color: hsl(212, 21%, 14%);
@@ -70,12 +72,12 @@ body article.card section.card-right .price {
   flex-wrap: wrap;
 }
 body article.card section.card-right .price .price-sell {
-  font-size: 2.5rem;
+  margin-right: 20px;
+  font-size: 2rem;
   color: hsl(158, 36%, 37%);
   font-family: "Fraunces", serif;
 }
 body article.card section.card-right .price .price-original {
-  margin-left: 20px;
   text-decoration: line-through;
   color: hsl(228, 12%, 48%);
 }
@@ -94,7 +96,7 @@ body article.card section.card-right button.button {
   align-items: center;
 }
 body article.card section.card-right button.button:hover {
-  background-color: hsla(158, 36%, 37%, 0.42);
+  background-image: linear-gradient(rgb(27, 64, 49) 0 0);
 }
 body article.card section.card-right button.button .button-name {
   margin-left: 10px;

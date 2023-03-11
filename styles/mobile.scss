@@ -1,12 +1,11 @@
 @use "main";
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 475px) {
   body {
     article.card {
       display: flex;
-      flex-wrap: wrap;
       flex-direction: column;
-      align-content: center;
+      align-items: center;
       margin: 0px 10px;
 
       section.card-left {
