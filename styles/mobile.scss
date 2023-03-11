@@ -1,19 +1,35 @@
-@media screen and (max-width: 375px) {
-  section.card-left {
-    background-image: url("./images/image-product-mobile.jpg");
-    background-size: contain;
-  }
+@use "main";
 
-  article.card {
-    flex-wrap: wrap;
-  }
+@media screen and (max-width: 400px) {
+  body {
+    article.card {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-content: center;
+      margin: 0px 10px;
 
-  .card-left {
-    min-width: 200px;
-    height: auto;
-  }
+      section.card-left {
+        min-width: 300px;
 
-  .card-right {
-    min-width: 300px;
+        img.perfume-mobile {
+          display: block;
+          width: 100%;
+          border-top-left-radius: main.$border-radius;
+          border-top-right-radius: main.$border-radius;
+        }
+
+        .perfume-desktop {
+          display: none;
+        }
+      }
+
+      section.card-right {
+        min-width: 300px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: main.$border-radius;
+        border-bottom-right-radius: main.$border-radius;
+      }
+    }
   }
 }
